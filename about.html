@@ -12,17 +12,42 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-    
+
             </ul>
         </nav>
     </header>
+
+  <div id="scrollReminder">
+    <img src="Untitled-5.png" alt="Scroll Reminder">
+  </div>
+
+  <script>
+    function showScrollReminder() {
+      document.getElementById("scrollReminder").style.display = "block";
+    }
+
+    // Function to hide the scroll reminder
+    function hideScrollReminder() {
+      document.getElementById("scrollReminder").style.display = "none";
+    }
+
+    window.addEventListener('scroll', function() {
+      // Check if user has scrolled to the bottom of the page
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        showScrollReminder(); // Show the reminder when the bottom is reached
+      } else {
+        hideScrollReminder(); // Hide the reminder otherwise
+      }
+    });
+  </script>
+  
   <section>
     <div class="container">
         <div class="card">
             <img src="CV2_6088.jpg" alt="Photo">
             <div class="intro">
                <h3>About Us</h3>
-            
+
               <p>Welcome to our website here you will find a variety of resources to help you maximize your financial wellbeing.
 
                <br><br>
@@ -32,12 +57,12 @@
             </div>
         </div>
 
-  
+
              <div class="card">
                  <img src="CV2_6115.jpg" alt="Photo">
                  <div class="intro">
                    <h3> Our Mission</h3>
-                    
+
                    <p> 
                         With this website we aim to provide comprehensive support and resources for students applying for financial assistance in Canada. Through this platform, students will gain access to valuable information about available scholarships, grants, loans, and other forms of financial aid tailored to their needs. The website aims to streamline the application process, offering guidance on eligibility criteria, application deadlines, and necessary documents. By empowering students with the tools and information they need, the website seeks to increase accessibility to higher education and alleviate financial barriers for aspiring learners across Canada.
                     </p>
@@ -88,7 +113,7 @@
           <li><a href="services.html">Services</a></li>
         </ul>
       </nav>
-        <p1>&copy; 2024 Caija Brome-Cumberbatch. All rights reserved.</p1>
+        <p1>&copy; 2024. All rights reserved.</p1>
     </footer>
   </section>
 </body>

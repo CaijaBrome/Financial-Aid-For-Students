@@ -13,6 +13,35 @@
      </header>
      </section>
 
+   <div id="popupContainer">
+     <div id="popupImage">
+       <img src="Untitled-6.png" alt="Popup Image">
+     </div>
+   </div>
+
+   <script>
+     // Get references to the popup elements
+   const popupContainer = document.getElementById('popupContainer');
+
+   // Function to show the popup
+   function showPopup() {
+     popupContainer.style.display = 'block';
+   }
+
+   // Function to hide the popup
+   function hidePopup() {
+     popupContainer.style.display = 'none';
+   }
+
+   // Show the popup when the page is loaded
+   window.onload = function() {
+     showPopup();
+
+     // Hide the popup after 10 seconds
+     setTimeout(hidePopup, 10000); // 10000 milliseconds = 10 seconds
+   };
+   </script>
+
     <header>
     <nav>
         <ul>
@@ -26,8 +55,6 @@
    <section>
       <img src="CV2_5378.jpg" alt="Athlete" width="800" height="500">
    </section>
-
-
   <section>
     <h3>Is Financial Aid For You?</h3>
      <hr class="class-2" />
@@ -46,9 +73,7 @@
          </nav>
       </section>
    </header>
-
-
-    <section>
+   <section>
        <footer>
            <nav>
              <ul>
@@ -57,7 +82,7 @@
                <li><a href="services.html">Services</a></li>
              </ul>
            </nav>
-           <p>&copy; 2024 Caija Brome-Cumberbatch. All rights reserved.</p>
+           <p>&copy; 2024. All rights reserved.</p>
        </footer>
        </section>
  </body>
